@@ -56,13 +56,6 @@ public class FirstJavaHello {
     }
 
     public static void excercise_3_3() {
-        /* 
-        Re-write the above ternary operator code to find the max of three numbers,
-        for example, a, b, and c. 
-        Bonus, declare a, b, and c as integer variable and 
-        ask the users to enter these three values instead of hard coding them.
-        Also, ask the user to continue if they like to find max of another set of integers.
-        */
         int max, a, b, c;
         Scanner readInput = new Scanner(System.in);
         char key = 'y';
