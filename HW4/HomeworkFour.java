@@ -7,17 +7,43 @@ public class HomeworkFour {
         char cw = '-';
         char ch = '|';
 
-        System.out.printf("Using 3 loop to print %d x %d:\n", height, width);
+        System.out.println("4.1 How many times each loop is executed?\n");
+        excercise_4_1();
+
+        System.out.printf("4.2 Using 3 loop to print %d x %d:\n", height, width);
         excercise_4_2(height, width);
 
-        System.out.printf("Using do-while to print %d x %d:\n", height, width);
+        System.out.printf("4.3 Using do-while to print %d x %d:\n", height, width);
         excercise_4_3(height, width);
 
-        System.out.printf("Using for-loop to print %d x %d:\n", height, width);
+        System.out.printf("4.4 Using for-loop to print %d x %d:\n", height, width);
         excercise_4_4(height, width, ch, cw);
 
-        System.out.println("Using custom characters, height and width");
+        System.out.println("4.5+4.6 Using custom characters, height and width");
         excercise_4_5();
+    }
+
+
+    public static void excercise_4_1() {
+        // a: 10 times
+        int i = 0;
+        while (i++ < 10) {
+            System.out.println("Hello World a: " + i); 
+        }
+        System.out.println("\n### a: 10 times\n");
+
+        // b: 9 times
+        i = 0;
+        while (++i < 10) {
+            System.out.println("Hello World b: " + i); 
+        }
+        System.out.println("\n### b: 9 times\n");
+
+        // c: 0 times
+        while (++i < 10) {
+            System.out.println("Hello World c: " + i); 
+        }
+        System.out.println("\n### c: 0 times\n");
     }
 
     public static void excercise_4_2(int height, int width) {
