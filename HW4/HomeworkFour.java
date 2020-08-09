@@ -2,25 +2,40 @@ import java.util.Scanner;
 
 public class HomeworkFour {
     public static void main(final String[] args) {
+        Scanner readInput = new Scanner(System.in);
         final int width = 25;
         final int height = 17;
         char cw = '-';
         char ch = '|';
+        int ex;
 
-        System.out.println("4.1 How many times each loop is executed?\n");
-        excercise_4_1();
+        while (true) {
+            System.out.print("\nPlease enter the exercise you want to check.\n ");
+            System.out.print("Enter 1 - 6 or 0 to exit the program: ");
+            ex = readInput.nextInt();
+            if (ex <= 0) {
+                break;
+            }
 
-        System.out.printf("4.2 Using 3 loop to print %d x %d:\n", height, width);
-        excercise_4_2(height, width);
-
-        System.out.printf("4.3 Using do-while to print %d x %d:\n", height, width);
-        excercise_4_3(height, width);
-
-        System.out.printf("4.4 Using for-loop to print %d x %d:\n", height, width);
-        excercise_4_4(height, width, ch, cw);
-
-        System.out.println("4.5+4.6 Using custom characters, height and width");
-        excercise_4_5();
+            if (ex == 1) {
+                System.out.println("\n4.1 How many times each loop is executed?\n");
+                excercise_4_1();
+            } else if (ex == 2) {
+                System.out.printf("\n4.2 Using 3 loop to print %d x %d:\n", height, width);
+                excercise_4_2(height, width);
+            } else if (ex == 3) {
+                System.out.printf("\n4.3 Using do-while to print %d x %d:\n", height, width);
+                excercise_4_3(height, width);
+            } else if (ex == 4) {
+                System.out.printf("\n4.4 Using for-loop to print %d x %d:\n", height, width);
+                excercise_4_4(height, width, ch, cw);
+            } else if (ex == 5 || ex == 6) {
+                System.out.println("\n4.5+4.6 Using custom characters, height and width");
+                excercise_4_5();
+            } else {
+                System.out.printf("\nNo excercise %d \n", ex);
+            }
+        }  
     }
 
 
@@ -128,6 +143,7 @@ public class HomeworkFour {
             int height = readInput.nextInt();
             System.out.print("Please enter the width: ");
             int width = readInput.nextInt();
+            System.our.println();
             
             excercise_4_4(height, width, ch, cw);
 
