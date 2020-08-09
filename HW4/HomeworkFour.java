@@ -143,7 +143,7 @@ public class HomeworkFour {
             int height = readInput.nextInt();
             System.out.print("Please enter the width: ");
             int width = readInput.nextInt();
-            System.our.println();
+            System.out.println();
             
             excercise_4_4(height, width, ch, cw);
 
